@@ -22,7 +22,9 @@ for entity in matching_entities:
       total_score += (entity.salience * 1.5) * min(3, len(entity.mentions))
     else:
       total_score += entity.salience * min(3, len(entity.mentions))
-      ```
+     
+ ```
+      
       
 Once we score all the articles, we filter them out by source (no more than one article from a single source) and sentiment to deliver a diverse set of views to the user.
 
